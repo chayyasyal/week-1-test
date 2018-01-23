@@ -1,6 +1,6 @@
 # Quiz Master
 
-A test created using JavaScript in preparation of my final product for Coding Pilot Project. The first task as part of a week sprint cycle.
+A test created using HTML in preparation of my final product for Coding Pilot Project. The first task as part of a week sprint cycle.
 
 # About
 
