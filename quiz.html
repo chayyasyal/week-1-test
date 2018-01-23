@@ -40,6 +40,20 @@ function renderQuestion(){
   test.innerHTML = "<input type='radio' name='choices' values='C'> "+chC+"<br>";
   test.innerHTML += "<button onclick='checkAnswer ()'>Submit Answer</button>";
 }
+
+function checkAnswer(){
+  choices = document.getElementsByName("choices");
+  for(var i=0; i<choices.length; i++){
+    if(choices [i].checked){
+      choice = choices[i].value;
+    }
+  }
+  if(choice == questions[pos][1]){
+    correct ++;
+  }
+  pos ++;
+  renderQuestion();
+}
 </script>
 
 </head>
