@@ -8,16 +8,19 @@ div#test{ border:#5AB029 3px solid; padding:10px 40px 40px 40px; background-colo
 </style>
 
 <script type="text/javascript">
+window.addEventListener("load", renderQuestion, false);
+
 var pos = 0;
 var correct = 0;
 var test, test_status, question, choice, choices, chA, chB, chC;
 
 var questions = [
-  ["Which artist drew a moustache on the Mona Lisa?", "Salvador Dali", "Banksy", "Marcel DuChamp"]
+  ["Which artist drew a moustache on the Mona Lisa?", "Salvador Dali", "Banksy", "Marcel DuChamp"],
+  ["What is the longest river in the world?","The River Nile", "The Yangtze River", "The Amazon River"],
 ];
 
-function get (x){
-  return document.getElementByID(x);
+function get(x){
+  return document.getElementById(x);
 }
 
 function renderQuestion(){
@@ -29,7 +32,7 @@ function renderQuestion(){
       correct = 0;
       return false;
   }
-  get("test_status").innerHTML = "Question "+(pos+1)+" of" questions.length;
+  get("test_status").innerHTML = "Question "+(pos+1)+" of "+questions.length;
   question = questions[pos][0];
   chA = questions [pos][1];
   chB = questions [pos][2];
@@ -54,6 +57,7 @@ function checkAnswer(){
   pos ++;
   renderQuestion();
 }
+
 </script>
 
 </head>
