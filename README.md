@@ -4,8 +4,9 @@ A test created using HTML in preparation of my final product for Coding Pilot Pr
 
 # About
 
-The user has to answer a general knowledge question. If they get it wrong, an error message should pop up. If the user gets it right, a happy message should pop up. That is the end of the quiz; for now given time constraints.
+The user has to answer a general knowledge question. The user goes through the quiz and clicks the answers that they think are right.
+Once they finish the quiz, their total score will show up and they will also see a message telling them that they have finished the quiz.
 
 # How to use
 
-open quiz.html
+open quiz.html to play in browser and click on the answers you think are correct!
