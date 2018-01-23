@@ -8,3 +8,4 @@ The user has to answer a general knowledge question. If they get it wrong, an er
 
 # How to use
 
+open quiz.html
